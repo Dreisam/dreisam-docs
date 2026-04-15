@@ -12,13 +12,13 @@ export default withPwa(
       cn: {
         label: '🇨🇳 简体中文',
         lang: 'zh-CN',
-        link: '/cn/sdk/android/access-guide/',
+        link: '/dreisam-docs/cn/sdk/android/access-guide/',
         ...zh,
       },
       en: {
         label: '🇺🇸 English',
         lang: 'en',
-        link: '/en/sdk/android/access-guide/',
+        link: '/dreisam-docs/cn/en/sdk/android/access-guide/',
         ...en,
       },
     },

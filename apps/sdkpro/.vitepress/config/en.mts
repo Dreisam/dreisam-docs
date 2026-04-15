@@ -33,9 +33,18 @@ export const en = defineConfig({
     },
     returnToTopLabel: 'Back to top',
     sidebar: {
-      '/en/sdk/': { base: '/en/sdk/', items: sidebarSdk() },
-      '/en/api/': { base: '/en/api/', items: sidebarApi() },
-      '/en/faq/': { base: '/en/faq/', items: sidebarFaq() },
+      '/dreisam-docs/sdkpro/en/sdk/': {
+        base: '/dreisam-docs/sdkpro/en/sdk/',
+        items: sidebarSdk(),
+      },
+      '/dreisam-docs/sdkpro/en/api/': {
+        base: '/dreisam-docs/sdkpro/en/api/',
+        items: sidebarApi(),
+      },
+      '/dreisam-docs/sdkpro/en/faq/': {
+        base: '/dreisam-docs/sdkpro/en/faq/',
+        items: sidebarFaq(),
+      },
     },
   },
 });
@@ -106,18 +115,18 @@ function sidebarFaq(): DefaultTheme.SidebarItem[] {
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      activeMatch: '^/en/sdk/',
-      link: '/en/sdk/android/access-guide',
+      activeMatch: '^/dreisam-docs/sdkpro/en/sdk/',
+      link: '/dreisam-docs/sdkpro/en/sdk/android/access-guide',
       text: 'SDK',
     },
     {
-      activeMatch: '^/en/api/',
-      link: '/en/api/access-guide',
+      activeMatch: '^/dreisam-docs/sdkpro/en/api/',
+      link: '/dreisam-docs/sdkpro/en/api/access-guide',
       text: 'API',
     },
     {
-      activeMatch: '^/en/faq/',
-      link: '/en/faq/common-questions',
+      activeMatch: '^/dreisam-docs/sdkpro/en/faq/',
+      link: '/dreisam-docs/sdkpro/en/faq/common-questions',
       text: 'FAQ',
     },
   ];

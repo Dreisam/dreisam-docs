@@ -33,8 +33,14 @@ export const en = defineConfig({
     },
     returnToTopLabel: 'Back to top',
     sidebar: {
-      '/en/sdk/': { base: '/en/sdk/', items: sidebarSdk() },
-      '/en/faq/': { base: '/en/faq/', items: sidebarFaq() },
+      '/dreisam-docs/cn/en/sdk/': {
+        base: '/dreisam-docs/cn/en/sdk/',
+        items: sidebarSdk(),
+      },
+      '/dreisam-docs/cn/en/faq/': {
+        base: '/dreisam-docs/cn/en/faq/',
+        items: sidebarFaq(),
+      },
     },
     sidebarMenuLabel: 'Menu',
   },
@@ -92,13 +98,13 @@ function sidebarFaq(): DefaultTheme.SidebarItem[] {
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      activeMatch: '^/en/sdk/',
-      link: '/en/sdk/android/access-guide',
+      activeMatch: '^/dreisam-docs/cn/en/sdk/',
+      link: '/dreisam-docs/cn/en/sdk/android/access-guide',
       text: 'SDK',
     },
     {
-      activeMatch: '^/en/faq/',
-      link: '/en/faq/common-questions',
+      activeMatch: '^/dreisam-docs/cn/en/faq/',
+      link: '/dreisam-docs/cn/en/faq/common-questions',
       text: 'FAQ',
     },
   ];

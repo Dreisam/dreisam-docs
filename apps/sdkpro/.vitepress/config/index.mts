@@ -12,13 +12,13 @@ export default withPwa(
       cn: {
         label: '🇨🇳 简体中文',
         lang: 'zh-CN',
-        link: '/cn/sdk/android/access-guide/',
+        link: '/cn/',
         ...zh,
       },
       en: {
         label: '🇺🇸 English',
         lang: 'en',
-        link: '/en/sdk/android/access-guide/',
+        link: '/en/',
         ...en,
       },
     },

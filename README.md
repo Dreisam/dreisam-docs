@@ -40,6 +40,6 @@ pnpm run dev:sdkpro
 
 - 根入口：`/dreisam-docs/`
 - 标准 SDK：`/dreisam-docs/sdk/`
-- 增强 SDK：`/dreisam-docs/sdk-ol/`
+- 增强 SDK：`/dreisam-docs/sdkpro/`
 
 部署入口是 `.github/workflows/deploy-pages.yml`，触发条件是推送到 `main` 分支或手动运行 workflow。

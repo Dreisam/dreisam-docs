@@ -1,0 +1,41 @@
+html.dark {
+  color-scheme: dark;
+}
+
+.dark .VPContent {
+  /* background-color: #14161a; */
+}
+
+.form-valid-error p {
+  margin: 0;
+}
+
+/* 顶部导航栏选中项样式 */
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup {
+  border-bottom: 1px solid transparent;
+}
+
+.VPNavBarMenuLink.active,
+.VPNavBarMenuGroup.active {
+  border-bottom-color: var(--vp-c-brand-1);
+}
+
+.VPNavBarMenuLink {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.vp-menu-icon,
+.vp-sidebar-group-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  color: currentcolor;
+}
+
+.vp-sidebar-group-icon {
+  margin-right: 8px;
+}

@@ -12,13 +12,13 @@ export default withPwa(
       cn: {
         label: '🇨🇳 简体中文',
         lang: 'zh-CN',
-        link: '/dreisam-docs/sdkpro/cn/',
+        link: 'cn/',
         ...zh,
       },
       en: {
         label: '🇺🇸 English',
         lang: 'en',
-        link: '/dreisam-docs/sdkpro/en/',
+        link: 'en/',
         ...en,
       },
     },

@@ -35,18 +35,9 @@ export const zh = defineConfig({
     returnToTopLabel: '回到顶部',
 
     sidebar: {
-      '/dreisam-docs/sdkpro/cn/sdk/': {
-        base: '/dreisam-docs/sdkpro/cn/sdk/',
-        items: sidebarSdk(),
-      },
-      '/dreisam-docs/sdkpro/cn/api/': {
-        base: '/dreisam-docs/sdkpro/cn/api/',
-        items: sidebarApi(),
-      },
-      '/dreisam-docs/sdkpro/cn/faq/': {
-        base: '/dreisam-docs/sdkpro/cn/faq/',
-        items: sidebarFaq(),
-      },
+      'cn/sdk/': { base: 'cn/sdk/', items: sidebarSdk() },
+      'cn/api/': { base: 'cn/api/', items: sidebarApi() },
+      'cn/faq/': { base: 'cn/faq/', items: sidebarFaq() },
     },
     sidebarMenuLabel: '菜单',
   },
@@ -118,18 +109,18 @@ function sidebarFaq(): DefaultTheme.SidebarItem[] {
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      activeMatch: '^/dreisam-docs/sdkpro/cn/sdk/',
-      link: '/dreisam-docs/sdkpro/cn/sdk/android/access-guide',
+      activeMatch: '^cn/sdk/',
+      link: 'cn/sdk/android/access-guide',
       text: 'SDK',
     },
     {
-      activeMatch: '^/dreisam-docs/sdkpro/cn/api/',
-      link: '/dreisam-docs/sdkpro/cn/api/access-guide',
+      activeMatch: '^cn/api/',
+      link: 'cn/api/access-guide',
       text: 'API',
     },
     {
-      activeMatch: '^/dreisam-docs/sdkpro/cn/faq/',
-      link: '/dreisam-docs/sdkpro/cn/faq/common-questions',
+      activeMatch: '^cn/faq/',
+      link: 'cn/faq/common-questions',
       text: '常见问题',
     },
   ];

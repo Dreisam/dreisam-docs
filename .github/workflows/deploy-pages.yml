@@ -47,8 +47,9 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           set -euo pipefail
-          mkdir -p pages/cn pages/sdkpro
-          cp -R apps/sdk/.vitepress/dist/. pages/cn/
+          mkdir -p pages/cn pages/cn/en pages/sdkpro
+          cp -R apps/sdk/.vitepress/dist/cn/. pages/cn/
+          cp -R apps/sdk/.vitepress/dist/en/. pages/cn/en/
           cp -R apps/sdkpro/.vitepress/dist/. pages/sdkpro/
           cat > pages/index.html <<'EOF'
           <!doctype html>

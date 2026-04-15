@@ -33,8 +33,8 @@ export const zh = defineConfig({
     },
     returnToTopLabel: '回到顶部',
     sidebar: {
-      '/dreisam-docs/cn/sdk/': { base: '/dreisam-docs/cn/sdk/', items: sidebarSdk() },
-      '/dreisam-docs/cn/faq/': { base: '/dreisam-docs/cn/faq/', items: sidebarFaq() },
+      'sdk/': { base: 'sdk/', items: sidebarSdk() },
+      'faq/': { base: 'faq/', items: sidebarFaq() },
     },
     sidebarMenuLabel: '菜单',
   },
@@ -92,13 +92,13 @@ function sidebarFaq(): DefaultTheme.SidebarItem[] {
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      activeMatch: '^/dreisam-docs/cn/sdk/',
-      link: '/dreisam-docs/cn/sdk/android/access-guide',
+      activeMatch: '^sdk/',
+      link: 'sdk/android/access-guide',
       text: 'SDK',
     },
     {
-      activeMatch: '^/dreisam-docs/cn/faq/',
-      link: '/dreisam-docs/cn/faq/common-questions',
+      activeMatch: '^faq/',
+      link: 'faq/common-questions',
       text: '常见问题',
     },
   ];

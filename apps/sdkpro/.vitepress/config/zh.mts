@@ -28,12 +28,15 @@ export const zh = defineConfig({
     },
     lightModeSwitchTitle: '切换到浅色模式',
     nav: nav(),
+
     outline: {
       label: '页面导航',
     },
     returnToTopLabel: '回到顶部',
+
     sidebar: {
       '/cn/sdk/': { base: '/cn/sdk/', items: sidebarSdk() },
+      '/cn/api/': { base: '/cn/api/', items: sidebarApi() },
       '/cn/faq/': { base: '/cn/faq/', items: sidebarFaq() },
     },
     sidebarMenuLabel: '菜单',
@@ -43,15 +46,11 @@ export const zh = defineConfig({
 function sidebarSdk(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Android SDK',
+      text: 'AndroidSDK',
       items: [
         {
           link: 'android/access-guide',
           text: '接入指南',
-        },
-        {
-          link: 'android/update-notes',
-          text: '更新说明',
         },
         {
           link: 'android/dreisamlib-api',
@@ -60,15 +59,33 @@ function sidebarSdk(): DefaultTheme.SidebarItem[] {
       ],
     },
     {
-      text: 'iOS SDK',
+      text: 'iOS-SDK',
       items: [
         {
-          link: 'ios/update-notes',
-          text: '更新说明',
+          link: 'ios/access-guide',
+          text: '接入指南',
         },
         {
           link: 'ios/dreisamlib-api',
           text: 'DreisamLib API',
+        },
+      ],
+    },
+  ];
+}
+
+function sidebarApi(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'API',
+      items: [
+        {
+          link: 'access-guide',
+          text: '接入指南',
+        },
+        {
+          link: 'interface-documentation',
+          text: '接口文档',
         },
       ],
     },
@@ -95,6 +112,11 @@ function nav(): DefaultTheme.NavItem[] {
       activeMatch: '^/cn/sdk/',
       link: '/cn/sdk/android/access-guide',
       text: 'SDK',
+    },
+    {
+      activeMatch: '^/cn/api/',
+      link: '/cn/api/access-guide',
+      text: 'API',
     },
     {
       activeMatch: '^/cn/faq/',

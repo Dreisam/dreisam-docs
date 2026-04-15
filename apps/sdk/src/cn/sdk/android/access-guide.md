@@ -1,25 +1,25 @@
-# Android Access Guide
+# Android 接入指南
 
-This document is the standard integration guide for **DreisamSDK** on Android. It assumes the reader is familiar with Android Studio and basic Android development.
+本文档为 **DreisamSDK** 的 Android 平台标准集成指南，默认读者已熟悉 Android Studio 的基本操作，并具备一定的 Android 编程基础。
 
-## Demo Download
+## 示例工程下载
 
-> [Download SDK](https://github.com/Dreisam/DreisamLib-Android)
+> [下载 SDK](https://github.com/Dreisam/DreisamLib-Android)
 
-- `Demo` folder: Contains a complete Android project demonstrating the basic usage of the SDK.
-- `libs` folder: Contains the `DreisamLib` library file.
+- `Demo` 文件夹：包含完整的 Android 项目，演示 SDK 的基础用法，可供开发参考。
+- `libs` 文件夹：内含 `DreisamLib` 库文件。
 
-## Android Version Requirement
+## Android SDK 版本要求
 
-The SDK currently supports `Android 8.0` and above.
+当前 SDK 仅支持 `Android 8.0` 及以上版本。
 
-## Integration Steps
+## 项目配置及集成步骤
 
-1. Unzip `DreisamDemo V X.X.X.rar`.
-2. Copy `libs/DreisamLib-release_xxx.aar` into your project `libs/` directory.
-3. Add `implementation(files("libs/DreisamLib-release_1.0.1_2512311723.aar"))` to the `dependencies` block.
+1. 解压集成压缩包 `DreisamDemo V X.X.X.rar`。
+2. 将文件 `libs/DreisamLib-release_xxx.aar` 复制到工程的 `libs/` 目录下。
+3. 修改工程的 `dependencies` 配置，添加 `implementation(files("libs/DreisamLib-release_1.0.1_2512311723.aar"))`。
 
-## Full `build.gradle` Example
+## 完整的 `build.gradle` 配置文件
 
 ```kotlin
 plugins {
@@ -84,9 +84,9 @@ dependencies {
 }
 ```
 
-## Basic Permissions
+## 添加基础权限
 
-Add the following permissions to your `AndroidManifest.xml`:
+在 `AndroidManifest.xml` 文件中添加以下权限声明：
 
 ```xml
 <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -100,9 +100,9 @@ Add the following permissions to your `AndroidManifest.xml`:
 <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
 ```
 
-## ProGuard Rules
+## 混淆规则设置
 
-Add the following rule to `proguard-rules.pro`:
+在工程的混淆配置文件 `proguard-rules.pro` 中添加以下规则：
 
 ```text
 -keep class com.dreisamlib.lib.* {*;}

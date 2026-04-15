@@ -4,11 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "pnpm run build:sdk-ol && pnpm run build:sdk",
+    "build": "pnpm run build:protocol && pnpm run build:sdkpro && pnpm run build:sdk",
+    "build:protocol": "pnpm --filter @dreisam/protocol-docs run build",
     "build:sdk": "pnpm --filter @dreisam/sdk-docs run build",
-    "build:sdk-ol": "pnpm --filter @dreisam/sdk-ol-docs run build",
+    "build:sdkpro": "pnpm --filter @dreisam/sdkpro-docs run build",
+    "dev:protocol": "pnpm --filter @dreisam/protocol-docs run dev",
     "dev:sdk": "pnpm --filter @dreisam/sdk-docs run dev",
-    "dev:sdk-ol": "pnpm --filter @dreisam/sdk-ol-docs run dev"
+    "dev:sdkpro": "pnpm --filter @dreisam/sdkpro-docs run dev"
   },
   "engines": {
     "node": ">=20.0.0",

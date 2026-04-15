@@ -47,8 +47,8 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           set -euo pipefail
-          mkdir -p pages/sdk pages/sdkpro
-          cp -R apps/sdk/.vitepress/dist/. pages/sdk/
+          mkdir -p pages/cn pages/sdkpro
+          cp -R apps/sdk/.vitepress/dist/. pages/cn/
           cp -R apps/sdkpro/.vitepress/dist/. pages/sdkpro/
           cat > pages/index.html <<'EOF'
           <!doctype html>
@@ -138,7 +138,7 @@ jobs:
                 <h1>Dreisam 文档</h1>
                 <p>选择下面的入口进入对应文档站点。</p>
                 <div class="links">
-                  <a href="./sdk/">标准 SDK 文档</a>
+                  <a href="./cn/">标准 SDK 文档</a>
                   <a class="secondary" href="./sdkpro/">增强 SDK 文档</a>
                 </div>
               </main>

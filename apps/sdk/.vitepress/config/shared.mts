@@ -8,7 +8,7 @@ import { defineConfig, postcssIsolateStyles } from 'vitepress';
 import { docsBrand } from './brand.mts';
 import { search as zhSearch } from './zh.mts';
 
-const base = '/dreisam-docs/sdk/';
+const base = '/dreisam-docs/cn/';
 
 export const shared = defineConfig({
   base,

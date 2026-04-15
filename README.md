@@ -29,3 +29,13 @@ pnpm run dev:sdk-ol
 
 - `apps/sdk/.vitepress/dist`
 - `apps/sdk-ol/.vitepress/dist`
+
+## GitHub Pages
+
+当前仓库已经准备好 GitHub Pages 部署，发布后路径如下：
+
+- 根入口：`/dreisam-docs/`
+- 标准 SDK：`/dreisam-docs/sdk/`
+- 增强 SDK：`/dreisam-docs/sdk-ol/`
+
+部署入口是 `.github/workflows/deploy-pages.yml`，触发条件是推送到 `main` 分支或手动运行 workflow。

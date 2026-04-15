@@ -8,17 +8,20 @@ import { defineConfig, postcssIsolateStyles } from 'vitepress';
 import { docsBrand } from './brand.mts';
 import { search as zhSearch } from './zh.mts';
 
+const base = '/dreisam-docs/sdk/';
+
 export const shared = defineConfig({
+  base,
   appearance: true,
   cleanUrls: true,
-  head: head(),
-  pwa: pwa(),
+  head: head(base),
+  pwa: pwa(base),
   srcDir: 'src',
   themeConfig: {
     i18nRouting: true,
     logo: {
-      dark: '/logo-dark.svg',
-      light: '/logo.svg',
+      dark: `${base}logo-dark.svg`,
+      light: `${base}logo.svg`,
     },
     search: {
       options: {
@@ -61,7 +64,7 @@ export const shared = defineConfig({
   },
 });
 
-function head(): HeadConfig[] {
+function head(base: string): HeadConfig[] {
   return [
     [
       'meta',
@@ -70,7 +73,7 @@ function head(): HeadConfig[] {
         name: 'keywords',
       },
     ],
-    ['link', { href: '/logo.svg', rel: 'icon', type: 'image/svg+xml' }],
+    ['link', { href: `${base}logo.svg`, rel: 'icon', type: 'image/svg+xml' }],
     [
       'meta',
       {
@@ -79,11 +82,11 @@ function head(): HeadConfig[] {
         name: 'viewport',
       },
     ],
-    ['link', { href: '/logo.svg', rel: 'icon' }],
+    ['link', { href: `${base}logo.svg`, rel: 'icon' }],
   ];
 }
 
-function pwa(): PwaOptions {
+function pwa(base: string): PwaOptions {
   return {
     includeManifestIcons: false,
     manifest: {
@@ -91,16 +94,16 @@ function pwa(): PwaOptions {
       icons: [
         {
           sizes: 'any',
-          src: '/logo.svg',
+          src: `${base}logo.svg`,
           type: 'image/svg+xml',
         },
         {
           sizes: 'any',
-          src: '/logo.svg',
+          src: `${base}logo.svg`,
           type: 'image/svg+xml',
         },
       ],
-      id: '/',
+      id: base,
       name: `${docsBrand.name} SDK`,
       short_name: docsBrand.name.toLowerCase().replaceAll(/\s+/g, '_'),
       theme_color: '#ffffff',

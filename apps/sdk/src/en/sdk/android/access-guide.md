@@ -4,7 +4,7 @@ This document is the standard integration guide for **DreisamSDK** on Android. I
 
 ## Demo Download
 
-> [Download SDK](https://github.com/Dreisam/Dreisam_Off_Android)
+> [Download SDK](https://github.com/Dreisam/DreisamLib-Android)
 
 - `Demo` folder: Contains a complete Android project demonstrating the basic usage of the SDK.
 - `libs` folder: Contains the `DreisamLib` library file.

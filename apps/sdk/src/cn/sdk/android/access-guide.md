@@ -4,7 +4,7 @@
 
 ## 示例工程下载
 
-> [下载 SDK](https://github.com/Dreisam/Dreisam_Off_Android)
+> [下载 SDK](https://github.com/Dreisam/DreisamLib-Android)
 
 - `Demo` 文件夹：包含完整的 Android 项目，演示 SDK 的基础用法，可供开发参考。
 - `libs` 文件夹：内含 `DreisamLib` 库文件。

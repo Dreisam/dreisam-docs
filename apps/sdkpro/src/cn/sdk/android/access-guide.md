@@ -12,7 +12,7 @@
 
 SDK 仓库地址：
 
-> [DreisamLib_Android](https://github.com/Dreisam/DreisamLib_Android)
+> [DreisamLibPro-Android](https://github.com/Dreisam/DreisamLibPro-Android)
 
 仓库中包含以下内容：
 

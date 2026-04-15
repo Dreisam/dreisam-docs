@@ -10,7 +10,7 @@ This guide explains how to integrate `DreisamLib` into an Android project and co
 
 ## Download the SDK
 
-> [DreisamLib_Android](https://github.com/Dreisam/DreisamLib_Android)
+> [DreisamLibPro-Android](https://github.com/Dreisam/DreisamLibPro-Android)
 
 Repository contents:
 
